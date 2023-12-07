@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+  </head>
+  <body>
+    <header class="header">
+      
+      <div class="text">
+        <h1>Terima Kasih Banyak <span class="active">1 Periodenya!</span></h1>
+        <p>
+          Project kecil-kecil untuk mengakhiri JAVA 1444 H ini🙌
+        </p>
+      </div>
+      <div class="btn">Sepatah dua patah kata..</div>
+      <div class="popUp">
+        <div class="pop">
+                    <div class="popText">
+            <h2>Yakin mau tau?<span class="active">?</span></h2>
+            <p>
+              Dengan memencet tombol 
+              <span class="active"> “Iya” </span>di bawah, kamu
+              berkomitmen untuk terus semangat berlomba-lomba dalam kebaikan, semangat kuliah, dan 
+              <span class="active"> tidak lupa </span> sama anak-anak JAVA hehe.
+            </p>
+          </div>
+          <div class="popBtn">
+            <a href="wish.html">
+              <div class="popB yes">Iya</div>
+            </a>
+            <div class="popB no">
+              <p>Ga jadi deh</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+  <script>
+    const popBox = document.querySelector(".popUp");
+    const wish = document.querySelector(".btn");
+    const noBtn = document.querySelector(".no");
+
+    wish.addEventListener("click", function () {
+      popBox.classList.add("show");
+    });
+    noBtn.addEventListener("click", function () {
+      popBox.classList.remove("show");
+    });
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
